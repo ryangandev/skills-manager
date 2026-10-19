@@ -21,7 +21,8 @@ The repo is a SwiftPM package for macOS 15+, built with swift-tools 6.2.
   - `EditorSession.swift`: unsaved edits for one skill.
   - The other files are the views, one per screen or sheet.
 - `Tests/SkillsCoreTests`: Swift Testing suites that run against a temporary home folder (the `Sandbox` helper).
-- `Scripts/package_app.sh`: wraps the built binary into `build/SkillsManager.app` with an Info.plist (bundle id `dev.ryangan.skillsmanager`) and an ad-hoc signature.
+- `Scripts/package_app.sh`: wraps the built binary into `build/SkillsManager.app` with an Info.plist (bundle id `dev.ryangan.skillsmanager`), the app icon and an ad-hoc signature.
+- `Resources/AppIcon.svg`: the app icon source; `Scripts/make_icon.sh` renders it into the committed `Resources/AppIcon.icns`, so rerun it after editing the SVG.
   There is no Xcode project, so the package stays the single source of truth.
 
 ## Scanning and sync status

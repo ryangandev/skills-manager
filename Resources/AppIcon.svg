@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAF5EE"/>
+      <stop offset="1" stop-color="#ECE2D5"/>
+    </linearGradient>
+    <linearGradient id="back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A4A47"/>
+      <stop offset="1" stop-color="#333331"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A84A24"/>
+      <stop offset="1" stop-color="#8F3A18"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle tile on the macOS 824pt icon grid -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+
+  <!-- Back card: Codex -->
+  <g transform="rotate(-8 430 470)">
+    <rect x="248" y="250" width="364" height="460" rx="58" fill="#000000" opacity="0.10" transform="translate(0 14)"/>
+    <rect x="248" y="250" width="364" height="460" rx="58" fill="url(#back)"/>
+    <rect x="300" y="310" width="110" height="24" rx="12" fill="#ECE2D5" opacity="0.35"/>
+  </g>
+
+  <!-- Front card: Claude, a SKILL.md with frontmatter lines and a spark -->
+  <g transform="rotate(6 594 566)">
+    <rect x="412" y="336" width="364" height="460" rx="58" fill="#5A1E08" opacity="0.22" transform="translate(0 18)"/>
+    <rect x="412" y="336" width="364" height="460" rx="58" fill="url(#front)"/>
+    <rect x="466" y="398" width="112" height="26" rx="13" fill="#FAF5EE"/>
+    <rect x="466" y="448" width="196" height="26" rx="13" fill="#FAF5EE" opacity="0.55"/>
+    <rect x="466" y="498" width="152" height="26" rx="13" fill="#FAF5EE" opacity="0.55"/>
+    <path d="M594 580 Q604 650 674 664 Q604 678 594 748 Q584 678 514 664 Q584 650 594 580 Z" fill="#FAF5EE"/>
+  </g>
+</svg>
